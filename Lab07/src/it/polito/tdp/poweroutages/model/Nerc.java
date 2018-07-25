@@ -1,10 +1,19 @@
 package it.polito.tdp.poweroutages.model;
 
+import java.util.*;
+
+import it.polito.tdp.poweroutages.db.PowerOutageDAO;
+
 public class Nerc {
 
 	private int id;
 	private String value;
-
+	PowerOutageDAO dao = new PowerOutageDAO();
+	
+	public Nerc() {
+		
+	}
+	
 	public Nerc(int id, String value) {
 		this.id = id;
 		this.value = value;
@@ -54,4 +63,7 @@ public class Nerc {
 		builder.append(value);
 		return builder.toString();
 	}
+	
+	
+	
 }

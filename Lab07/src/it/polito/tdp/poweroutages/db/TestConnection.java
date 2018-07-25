@@ -1,6 +1,10 @@
 package it.polito.tdp.poweroutages.db;
 
 import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
+
+import it.polito.tdp.poweroutages.model.PowerOutages;
 
 public class TestConnection {
 
@@ -14,6 +18,11 @@ public class TestConnection {
 		} catch (Exception e) {
 			System.err.println("Test FAILED");
 		}
+		
+		PowerOutageDAO dao = new PowerOutageDAO();
+		List<PowerOutages> eventi = new ArrayList<>(dao.getPowerOutages("MAAC"));
+		System.out.println(eventi.toString());
+		
 	}
 
 }

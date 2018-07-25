@@ -1,0 +1,19 @@
+
+	NUMERO DI ORE =  differenza tra date_event_began e date_event_finished
+	NUMERO DI ANNI = differenza tra l’anno dell’evento più recente 
+	  e l’anno di quello più vecchio
+	  
+	 Soluzione parziale:
+	 sequenza di eventi con:
+	  - numero di ore <= a maxHours
+	  - numero di anni <= a maxYear
+	  
+	 Soluzione totale :
+	 sequenza di eventi con:
+	  - numero di persone massimo
+	 
+	 Livello ricorsione = numero anno
+	 
+	 Caso terminale:
+	  - numero di ore = a maxHours
+	  - numero di anni = a maxYear 
